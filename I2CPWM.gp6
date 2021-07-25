@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GPDProject version="21" oldestCompatibleVersion="21" GPDVersion="6.26.004" lastChange="2021/07/20 0:11">
+<GPDProject version="21" oldestCompatibleVersion="21" GPDVersion="6.26.004" lastChange="2021/07/25 23:53">
     <generalProjectSettings/>
     <chip family="04" type="06" friendlyName="GreenPAK 6" partNumber="36" package="7">
-        <nvmData registerLenght="2048">3E 90 9 0 0 0 CA C2 1C 48 32 49 4D 6 54 DC BF 45 C0 95 9 1E F0 FF F0 F5 C7 D7 2F 5F FF 7C FD F4 F5 D7 D7 6F 5F FF 7D 39 14 0 0 0 0 0 0 0 0 0 0 0 0 0 FC D6 DB C5 A1 2C CE 23 4D D6 A5 6D DE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 80 60 0 0 0 0 0 0 0 80 80 20 0 20 20 20 20 20 20 0 0 0 0 0 0 FF 0 0 0 0 0 F3 0 0 4 0 14 22 30 C 0 0 0 0 0 0 0 A 40 2 0 96 96 96 30 0 30 8 5F F0 13 0 0 3 80 0 34 2 5B 0 46 8 13 5B 30 8 13 1 5B 46 8 13 5B 30 8 13 1 5B 46 8 13 5B 30 8 13 1 FE 3 8 13 1 5B A 0 0 71 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 A5</nvmData>
+        <nvmData registerLenght="2048">3E 90 9 0 0 0 CA C2 1C 48 32 49 4D 6 54 DC BF 45 C0 95 9 1E F0 FF F0 F5 C7 D7 2F 5F FF 7C FD F4 F5 D7 D7 6F 5F FF 7D 39 14 0 0 0 0 0 0 0 0 0 0 0 0 0 FC D6 DB C5 A1 2C CE 23 4D D6 A5 6D DE 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 80 50 0 50 10 10 0 0 0 80 80 20 0 20 20 20 20 20 20 0 0 0 0 0 0 0 0 0 0 0 0 F3 0 0 4 0 14 22 30 C 0 0 0 0 0 0 0 A 40 2 0 96 96 96 30 0 30 8 5F F0 13 0 0 3 80 0 34 2 5B 0 46 8 13 5B 30 8 13 1 5B 46 8 13 5B 30 8 13 1 5B 46 8 13 5B 30 8 13 1 5B 3 8 13 1 5B A 0 0 70 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 A5</nvmData>
         <eepromData id="0">0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</eepromData>
-        <checksum crc32="0xB34838AB" version="7"/>
+        <checksum crc32="0x873099FC" version="7"/>
         <VDDItem id="0">
             <item id="0" caption="VDD (PIN 1)">
                 <graphics pos="(-571.49,149.30)" angle="0" flipping="0" hidden="0" tOrigin="(20.00,10.00)"/>
@@ -60,7 +60,7 @@
         </IOPad>
         <IOPad id="9" useCaseMode="2">
             <item id="9" caption="PIN 10 (IO6)">
-                <graphics pos="(554.90,864.19)" angle="0" flipping="3" hidden="0" tOrigin="(20.00,10.00)"/>
+                <graphics pos="(553.99,864.19)" angle="0" flipping="3" hidden="0" tOrigin="(20.00,10.00)"/>
                 <textLabel pos="(7.50,-27.00)" angle="0.00" textColor="#ffff00ff" backgroundColor="#14141464">INT</textLabel>
             </item>
         </IOPad>
@@ -379,25 +379,25 @@
             <points>(224.00,-65.00); (297.00,-65.00)</points>
         </wire>
         <wire output="50" input="678" autoRouting="1" pen="#ff8000ff;1.00;1;32;128" lineType="2" protected="1" CWLid="28" wireText="NET28" wireState="0">
-            <points>(-374.00,-142.00); (89.00,-142.00); (89.00,772.00); (269.00,772.00); (269.00,790.00); (287.00,790.00)</points>
+            <points>(-374.00,-142.00); (93.00,-142.00); (93.00,771.00); (273.00,771.00); (273.00,790.00); (287.00,790.00)</points>
         </wire>
         <wire output="50" input="682" autoRouting="1" pen="#ff8000ff;1.00;1;32;128" lineType="2" protected="1" CWLid="28" wireText="NET28" wireState="0">
-            <points>(-374.00,-142.00); (89.00,-142.00); (89.00,640.00); (281.00,640.00); (281.00,666.00); (297.00,666.00)</points>
+            <points>(-374.00,-142.00); (93.00,-142.00); (93.00,639.00); (285.00,639.00); (285.00,666.00); (297.00,666.00)</points>
         </wire>
         <wire output="50" input="684" autoRouting="1" pen="#ff8000ff;1.00;1;32;128" lineType="2" protected="1" CWLid="28" wireText="NET28" wireState="0">
-            <points>(-374.00,-142.00); (89.00,-142.00); (89.00,520.00); (281.00,520.00); (281.00,544.00); (297.00,544.00)</points>
+            <points>(-374.00,-142.00); (93.00,-142.00); (93.00,519.00); (285.00,519.00); (285.00,544.00); (297.00,544.00)</points>
         </wire>
         <wire output="50" input="688" autoRouting="1" pen="#ff8000ff;1.00;1;32;128" lineType="2" protected="1" CWLid="28" wireText="NET28" wireState="0">
-            <points>(-374.00,-142.00); (89.00,-142.00); (89.00,268.00); (281.00,268.00); (281.00,296.00); (297.00,296.00)</points>
+            <points>(-374.00,-142.00); (93.00,-142.00); (93.00,267.00); (285.00,267.00); (285.00,296.00); (297.00,296.00)</points>
         </wire>
         <wire output="50" input="690" autoRouting="1" pen="#ff8000ff;1.00;1;32;128" lineType="2" protected="1" CWLid="28" wireText="NET28" wireState="0">
-            <points>(-374.00,-142.00); (89.00,-142.00); (89.00,148.00); (281.00,148.00); (281.00,172.00); (297.00,172.00)</points>
+            <points>(-374.00,-142.00); (93.00,-142.00); (93.00,147.00); (285.00,147.00); (285.00,172.00); (297.00,172.00)</points>
         </wire>
         <wire output="50" input="692" autoRouting="1" pen="#ff8000ff;1.00;1;32;128" lineType="2" protected="1" CWLid="28" wireText="NET28" wireState="0">
-            <points>(-374.00,-142.00); (89.00,-142.00); (89.00,28.00); (281.00,28.00); (281.00,49.00); (297.00,49.00)</points>
+            <points>(-374.00,-142.00); (93.00,-142.00); (93.00,27.00); (285.00,27.00); (285.00,49.00); (297.00,49.00)</points>
         </wire>
         <wire output="50" input="694" autoRouting="1" pen="#ff8000ff;1.00;1;32;128" lineType="2" protected="1" CWLid="28" wireText="NET28" wireState="0">
-            <points>(-374.00,-142.00); (89.00,-142.00); (89.00,-104.00); (281.00,-104.00); (281.00,-75.00); (297.00,-75.00)</points>
+            <points>(-374.00,-142.00); (93.00,-142.00); (93.00,-93.00); (285.00,-93.00); (285.00,-75.00); (297.00,-75.00)</points>
         </wire>
         <wire output="0" input="622" autoRouting="1" pen="#00ff00ff;1.00;1;32;128" lineType="1" protected="0" CWLid="-1" wireText="VDD" wireState="1">
             <points/>
@@ -430,7 +430,7 @@
             <points/>
         </wire>
         <wire output="50" input="686" autoRouting="1" pen="#ff8000ff;1.00;1;32;128" lineType="2" protected="1" CWLid="28" wireText="NET28" wireState="0">
-            <points>(-374.00,-142.00); (89.00,-142.00); (89.00,400.00); (281.00,400.00); (281.00,419.00); (297.00,419.00)</points>
+            <points>(-374.00,-142.00); (93.00,-142.00); (93.00,399.00); (285.00,399.00); (285.00,419.00); (297.00,419.00)</points>
         </wire>
         <wire output="194" input="521" autoRouting="1" pen="#00ff00ff;1.00;1;32;128" lineType="1" protected="0" CWLid="13" wireText="NET13" wireState="0">
             <points>(398.00,671.00); (531.00,671.00)</points>
@@ -454,19 +454,19 @@
             <points>(398.00,-70.00); (531.00,-70.00)</points>
         </wire>
         <wire output="58" input="642" autoRouting="1" pen="#2dffaaff;1.00;1;32;128" lineType="3" protected="0" CWLid="22" wireText="PWON5" wireState="0">
-            <points>(-384.00,744.00); (53.00,744.00); (53.00,182.00); (153.00,182.00)</points>
+            <points>(-384.00,744.00); (57.00,744.00); (57.00,182.00); (153.00,182.00)</points>
         </wire>
         <wire output="59" input="638" autoRouting="1" pen="#2dffaaff;1.00;1;32;128" lineType="3" protected="0" CWLid="23" wireText="PWON4" wireState="0">
-            <points>(-384.00,754.00); (41.00,754.00); (41.00,306.00); (153.00,306.00)</points>
+            <points>(-384.00,754.00); (45.00,754.00); (45.00,306.00); (153.00,306.00)</points>
         </wire>
         <wire output="60" input="634" autoRouting="1" pen="#2dffaaff;1.00;1;32;128" lineType="3" protected="0" CWLid="24" wireText="PWON3" wireState="0">
-            <points>(-384.00,764.00); (29.00,764.00); (29.00,429.00); (153.00,429.00)</points>
+            <points>(-384.00,764.00); (33.00,764.00); (33.00,429.00); (153.00,429.00)</points>
         </wire>
         <wire output="61" input="630" autoRouting="1" pen="#2dffaaff;1.00;1;32;128" lineType="3" protected="0" CWLid="25" wireText="PWON2" wireState="0">
-            <points>(-384.00,774.00); (17.00,774.00); (17.00,554.00); (153.00,554.00)</points>
+            <points>(-384.00,774.00); (21.00,774.00); (21.00,554.00); (153.00,554.00)</points>
         </wire>
         <wire output="62" input="626" autoRouting="1" pen="#2dffaaff;1.00;1;32;128" lineType="3" protected="0" CWLid="26" wireText="PWON1" wireState="0">
-            <points>(-384.00,785.00); (5.00,785.00); (5.00,676.00); (153.00,676.00)</points>
+            <points>(-384.00,785.00); (9.00,785.00); (9.00,676.00); (153.00,676.00)</points>
         </wire>
         <wire output="63" input="623" autoRouting="1" pen="#00ff00ff;1.00;1;32;128" lineType="1" protected="0" CWLid="27" wireText="PWON0" wireState="0">
             <points>(-384.00,795.00); (153.00,795.00)</points>
@@ -499,15 +499,6 @@
             <points/>
         </wire>
         <wire output="0" input="561" autoRouting="1" pen="#00ff00ff;1.00;1;32;128" lineType="1" protected="0" CWLid="-1" wireText="VDD" wireState="1">
-            <points/>
-        </wire>
-        <wire output="143" input="1029" autoRouting="1" pen="#ff8000ff;1.00;1;32;128" lineType="2" protected="1" CWLid="-1" wireText="SA_SEL0" wireState="1">
-            <points/>
-        </wire>
-        <wire output="144" input="1030" autoRouting="1" pen="#ff8000ff;1.00;1;32;128" lineType="2" protected="1" CWLid="-1" wireText="SA_SEL1" wireState="1">
-            <points/>
-        </wire>
-        <wire output="145" input="1031" autoRouting="1" pen="#ff8000ff;1.00;1;32;128" lineType="2" protected="1" CWLid="-1" wireText="SA_SEL2" wireState="1">
             <points/>
         </wire>
         <wire output="166" input="565" autoRouting="1" pen="#00ff00ff;1.00;1;32;128" lineType="1" protected="0" CWLid="45" wireText="NET45" wireState="0">
@@ -577,7 +568,7 @@
             <points/>
         </wire>
         <wire output="165" input="515" autoRouting="1" pen="#00ff00ff;1.00;1;32;128" lineType="1" protected="0" CWLid="12" wireText="NET12" wireState="0">
-            <points>(393.00,875.00); (532.00,875.00)</points>
+            <points>(393.00,875.00); (531.00,875.00)</points>
         </wire>
         <wire output="157" input="556" autoRouting="1" pen="#00ff00ff;1.00;1;32;128" lineType="1" protected="0" CWLid="40" wireText="PIO7" wireState="1">
             <points/>
@@ -589,10 +580,10 @@
             <points>(-192.00,-63.00); (-186.00,-63.00); (-186.00,-92.00); (-295.00,-92.00); (-295.00,-76.00); (-273.00,-76.00)</points>
         </wire>
         <wire output="48" input="568" autoRouting="1" pen="#00ff00ff;1.00;1;32;128" lineType="1" protected="0" CWLid="11" wireText="NET11" wireState="0">
-            <points>(-374.00,-168.00); (-307.00,-168.00); (-307.00,-50.00); (-273.00,-50.00)</points>
+            <points>(-374.00,-168.00); (-303.00,-168.00); (-303.00,-50.00); (-273.00,-50.00)</points>
         </wire>
         <wire output="142" input="567" autoRouting="1" pen="#00ff00ff;1.00;1;32;128" lineType="1" protected="0" CWLid="33" wireText="NET33" wireState="0">
-            <points>(-509.00,-27.00); (-295.00,-27.00); (-295.00,-63.00); (-273.00,-63.00)</points>
+            <points>(-509.00,-27.00); (-291.00,-27.00); (-291.00,-63.00); (-273.00,-63.00)</points>
         </wire>
         <wire output="142" input="547" autoRouting="1" pen="#00ff00ff;1.00;1;32;128" lineType="1" protected="0" CWLid="33" wireText="NET33" wireState="0">
             <points>(-509.00,-27.00); (-160.00,-27.00); (-160.00,-83.00); (-154.00,-83.00)</points>
@@ -601,10 +592,10 @@
             <points>(-83.00,-73.00); (-64.00,-73.00)</points>
         </wire>
         <wire output="57" input="646" autoRouting="1" pen="#2dffaaff;1.00;1;32;128" lineType="3" protected="0" CWLid="21" wireText="PWON6" wireState="0">
-            <points>(-384.00,733.00); (65.00,733.00); (65.00,59.00); (153.00,59.00)</points>
+            <points>(-384.00,733.00); (69.00,733.00); (69.00,59.00); (153.00,59.00)</points>
         </wire>
         <wire output="56" input="650" autoRouting="1" pen="#2dffaaff;1.00;1;32;128" lineType="3" protected="0" CWLid="20" wireText="PWON7" wireState="0">
-            <points>(-384.00,723.00); (77.00,723.00); (77.00,-65.00); (153.00,-65.00)</points>
+            <points>(-384.00,723.00); (81.00,723.00); (81.00,-65.00); (153.00,-65.00)</points>
         </wire>
         <wire output="39" input="261" autoRouting="1" pen="#00ff00ff;1.00;1;32;128" lineType="1" protected="0" CWLid="-1" wireText="POR" wireState="1">
             <points/>
@@ -1035,380 +1026,9 @@
                     </pinProbe>
                 </pinProbes>
                 <groups>
-                    <group name="[P] OSC1 -&gt; CLK /8">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="0;21;1;5" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="[P] EDGE DET -&gt; OUT">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="1;5;0;0" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="[P] PIN 20 &lt;- EXT. IN/OUT">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="100;45;0;20" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="[P] PIN 12 &lt;- EXT. OUT">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="100;45;0;12" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="[P] PIN 13 &lt;- EXT. IN/OUT">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="100;45;0;13" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="[P] PIN 15 &lt;- EXT. IN/OUT">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="100;45;0;15" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="[P] PIN 16 &lt;- EXT. IN/OUT">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="100;45;0;16" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="[P] PIN 17 &lt;- EXT. IN/OUT">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="100;45;0;17" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="[P] PIN 18 &lt;- EXT. IN/OUT">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="100;45;0;18" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="[P] PIN 19 &lt;- EXT. IN/OUT">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="100;45;0;19" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; GND">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="0;0;0;1" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; VDD">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="0;1;0;1" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; PIN 2 -&gt; OUT">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="0;2;2;1" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; PIN 3 -&gt; OUT">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="0;2;3;1" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; SA_SEL0">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="0;2;4;1" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; SA_SEL1">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="0;2;5;1" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; SA_SEL2">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="0;2;6;1" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; PIN 7 -&gt; OUT">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="0;2;7;1" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; PIN 8 -&gt; OUT">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="0;2;8;1" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; PIN 9 -&gt; OUT">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="0;2;9;1" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; PIO1">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="0;2;13;1" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; PIO2">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="0;2;15;1" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; PIO3">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="0;2;16;1" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; PIO4">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="0;2;17;1" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; PIO5">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="0;2;18;1" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; PIO6">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="0;2;19;1" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; PIO7">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="0;2;20;1" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; P DLY -&gt; OUT">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="0;18;0;0" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; POR">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="0;20;0;0" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
                     <group name="GreenPAK -&gt; OSC1 -&gt; OUT0">
                         <waveforms>
                             <WaveformIdData analysisType="0" pinIdStr="0;21;1;0" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; OSC1 -&gt; OUT1">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="0;21;1;2" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; OSC1 -&gt; CLK">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="0;21;1;3" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; OSC1 -&gt; CLK /64">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="0;21;1;9" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; OSC1 -&gt; CLK /512">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="0;21;1;10" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; PWON7">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="0;22;0;0" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; PWON6">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="0;22;0;1" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; I2C -&gt; OUT2">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="0;22;0;2" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; I2C -&gt; OUT3">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="0;22;0;3" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; I2C -&gt; OUT4">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="0;22;0;4" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; I2C -&gt; OUT5">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="0;22;0;5" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; I2C -&gt; OUT6">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="0;22;0;6" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; I2C -&gt; OUT7">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="0;22;0;7" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; I2C -&gt; PIN OUT0">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="0;22;0;8" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; I2C -&gt; PIN OUT1">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="0;22;0;9" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; I2C -&gt; PIN OUT2">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="0;22;0;10" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; I2C -&gt; PIN OUT3">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="0;22;0;11" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; 2-L0 -&gt; OUT">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="1;6;0;0" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; 3-L0 -&gt; OUT">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="1;7;0;0" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; 3-L1 -&gt; OUT">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="1;7;1;0" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; 3-L2 -&gt; OUT">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="1;7;2;0" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; DFF 7 -&gt; Q">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="1;9;7;0" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; DFF 8 -&gt; Q">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="1;9;8;0" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; PGEN -&gt; OUT">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="1;12;0;0" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; Pipe Delay -&gt; OUT0">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="1;13;0;0" xAxisBinding="0;;-1;-1;-1">
                                 <parameters/>
                             </WaveformIdData>
                         </waveforms>
@@ -1420,233 +1040,16 @@
                             </WaveformIdData>
                         </waveforms>
                     </group>
-                    <group name="GreenPAK -&gt; Pipe Delay -&gt; 1 PIPE OUT">
+                    <group name="GreenPAK -&gt; PGEN -&gt; OUT">
                         <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="1;13;0;2" xAxisBinding="0;;-1;-1;-1">
+                            <WaveformIdData analysisType="0" pinIdStr="1;12;0;0" xAxisBinding="0;;-1;-1;-1">
                                 <parameters/>
                             </WaveformIdData>
                         </waveforms>
                     </group>
-                    <group name="GreenPAK -&gt; 3-L7 -&gt; OUT">
+                    <group name="GreenPAK -&gt; DFF 8 -&gt; Q">
                         <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="2;7;7;0" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; 3-L8 -&gt; OUT">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="2;7;8;0" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; 3-L9 -&gt; OUT">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="2;7;9;0" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; 3-L10 -&gt; OUT">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="2;7;10;0" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; 3-L11 -&gt; OUT">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="2;7;11;0" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; 3-L12 -&gt; OUT">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="2;7;12;0" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; 3-L13 -&gt; OUT">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="2;7;13;0" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; 4-L0 -&gt; OUT">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="2;8;0;0" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; CNT0/DLY0/ FSM0 -&gt; OUT">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="2;16;0;0" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; CNT1/DLY1 -&gt; OUT">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="2;16;1;0" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; CNT2/DLY2 -&gt; OUT">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="2;16;2;0" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; CNT3/DLY3 -&gt; OUT">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="2;16;3;0" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; CNT4/DLY4 -&gt; OUT">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="2;16;4;0" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; CNT5/DLY5 -&gt; OUT">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="2;16;5;0" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; CNT6/DLY6 -&gt; OUT">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="2;16;6;0" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; CNT7/DLY7 -&gt; OUT">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="2;16;7;0" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GND -&gt; NET37">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="5;0;1;0" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="VDD -&gt; NET37">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="5;43;1;1" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="VDD2 -&gt; NET37">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="5;43;2;1" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="PIN 3 (Src) -&gt; NET37">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="5;43;3;1" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; NET36">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="100;45;0;1" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GPO0 (PIN 2)">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="100;45;0;2" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="CE (PIN 3)">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="100;45;0;3" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="SLA0 (PIN 4)">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="100;45;0;4" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="SLA1 (PIN 5)">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="100;45;0;5" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="SLA2 (PIN 6)">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="100;45;0;6" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GPO1 (PIN 7)">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="100;45;0;7" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="SCL (PIN 8)">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="100;45;0;8" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="SDA (PIN 9)">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="100;45;0;9" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="INT (PIN 10)">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="100;45;0;10" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; NET37">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="100;45;0;11" xAxisBinding="0;;-1;-1;-1">
-                                <parameters/>
-                            </WaveformIdData>
-                        </waveforms>
-                    </group>
-                    <group name="GreenPAK -&gt; NET35">
-                        <waveforms>
-                            <WaveformIdData analysisType="0" pinIdStr="100;45;0;14" xAxisBinding="0;;-1;-1;-1">
+                            <WaveformIdData analysisType="0" pinIdStr="1;9;8;0" xAxisBinding="0;;-1;-1;-1">
                                 <parameters/>
                             </WaveformIdData>
                         </waveforms>
@@ -1654,6 +1057,69 @@
                     <group name="GreenPAK -&gt; DFF 6 -&gt; Q">
                         <waveforms>
                             <WaveformIdData analysisType="0" pinIdStr="1;9;6;0" xAxisBinding="0;;-1;-1;-1">
+                                <parameters/>
+                            </WaveformIdData>
+                        </waveforms>
+                    </group>
+                    <group name="[P] OSC1 -&gt; CLK /8">
+                        <waveforms>
+                            <WaveformIdData analysisType="0" pinIdStr="0;21;1;5" xAxisBinding="0;;-1;-1;-1">
+                                <parameters/>
+                            </WaveformIdData>
+                        </waveforms>
+                    </group>
+                    <group name="[P] PIN 20 &lt;- EXT. IN/OUT">
+                        <waveforms>
+                            <WaveformIdData analysisType="0" pinIdStr="100;45;0;20" xAxisBinding="0;;-1;-1;-1">
+                                <parameters/>
+                            </WaveformIdData>
+                        </waveforms>
+                    </group>
+                    <group name="[P] PIN 19 &lt;- EXT. IN/OUT">
+                        <waveforms>
+                            <WaveformIdData analysisType="0" pinIdStr="100;45;0;19" xAxisBinding="0;;-1;-1;-1">
+                                <parameters/>
+                            </WaveformIdData>
+                        </waveforms>
+                    </group>
+                    <group name="[P] PIN 18 &lt;- EXT. IN/OUT">
+                        <waveforms>
+                            <WaveformIdData analysisType="0" pinIdStr="100;45;0;18" xAxisBinding="0;;-1;-1;-1">
+                                <parameters/>
+                            </WaveformIdData>
+                        </waveforms>
+                    </group>
+                    <group name="[P] PIN 17 &lt;- EXT. IN/OUT">
+                        <waveforms>
+                            <WaveformIdData analysisType="0" pinIdStr="100;45;0;17" xAxisBinding="0;;-1;-1;-1">
+                                <parameters/>
+                            </WaveformIdData>
+                        </waveforms>
+                    </group>
+                    <group name="[P] PIN 16 &lt;- EXT. IN/OUT">
+                        <waveforms>
+                            <WaveformIdData analysisType="0" pinIdStr="100;45;0;16" xAxisBinding="0;;-1;-1;-1">
+                                <parameters/>
+                            </WaveformIdData>
+                        </waveforms>
+                    </group>
+                    <group name="[P] PIN 15 &lt;- EXT. IN/OUT">
+                        <waveforms>
+                            <WaveformIdData analysisType="0" pinIdStr="100;45;0;15" xAxisBinding="0;;-1;-1;-1">
+                                <parameters/>
+                            </WaveformIdData>
+                        </waveforms>
+                    </group>
+                    <group name="[P] PIN 13 &lt;- EXT. IN/OUT">
+                        <waveforms>
+                            <WaveformIdData analysisType="0" pinIdStr="100;45;0;13" xAxisBinding="0;;-1;-1;-1">
+                                <parameters/>
+                            </WaveformIdData>
+                        </waveforms>
+                    </group>
+                    <group name="[P] PIN 12 &lt;- EXT. OUT">
+                        <waveforms>
+                            <WaveformIdData analysisType="0" pinIdStr="100;45;0;12" xAxisBinding="0;;-1;-1;-1">
                                 <parameters/>
                             </WaveformIdData>
                         </waveforms>
@@ -2218,7 +1684,16 @@
                     <component simulationModel="">
                         <componentId category="5" componentType="0" componentNumber="1"/>
                         <componentSpec manufacturer="" partNumber=""/>
-                        <componentUiSettings isFlippedHorizontally="false" isFlippedVertically="true" visible="true" position="(-735.722;50.9599)" rotationState="3" sceneIndex="0"/>
+                        <componentUiSettings isFlippedHorizontally="false" isFlippedVertically="true" visible="true" position="(-781.714;252.174)" rotationState="2" sceneIndex="0"/>
+                        <schematicProps>
+                            <param id="name" affinity="4" value="GND"/>
+                        </schematicProps>
+                        <instanceProps/>
+                    </component>
+                    <component simulationModel="">
+                        <componentId category="5" componentType="0" componentNumber="2"/>
+                        <componentSpec manufacturer="" partNumber=""/>
+                        <componentUiSettings isFlippedHorizontally="false" isFlippedVertically="false" visible="true" position="(790.293;42.3035)" rotationState="0" sceneIndex="0"/>
                         <schematicProps>
                             <param id="name" affinity="4" value="GND"/>
                         </schematicProps>
@@ -2246,7 +1721,7 @@
                     <component simulationModel="">
                         <componentId category="5" componentType="43" componentNumber="2"/>
                         <componentSpec manufacturer="" partNumber=""/>
-                        <componentUiSettings isFlippedHorizontally="false" isFlippedVertically="false" visible="true" position="(716.71;-188.216)" rotationState="2" sceneIndex="0"/>
+                        <componentUiSettings isFlippedHorizontally="false" isFlippedVertically="false" visible="true" position="(716.71;-188.649)" rotationState="2" sceneIndex="0"/>
                         <schematicProps>
                             <param id="name" affinity="4" value="VDD2"/>
                             <param id="has_rc" affinity="1" value="1"/>
@@ -2282,9 +1757,26 @@
                     </component>
                 </components>
                 <networks>
+                    <network networkId="51" name="NET51">
+                        <connections>
+                            <connection connectionType="0" routingType="0" sceneIndex="0">
+                                <from>
+                                    <IdDto category="5" componentType="43" componentNumber="2" pinNumber="1"/>
+                                </from>
+                                <to>
+                                    <IdDto category="5" componentType="0" componentNumber="2" pinNumber="0"/>
+                                </to>
+                                <path>
+                                    <point value="(780;-168)"/>
+                                    <point value="(806;-168)"/>
+                                    <point value="(806;20)"/>
+                                </path>
+                            </connection>
+                        </connections>
+                    </network>
                     <network networkId="37" name="NET37">
                         <connections>
-                            <connection connectionType="1" routingType="0" sceneIndex="0">
+                            <connection connectionType="0" routingType="0" sceneIndex="0">
                                 <from>
                                     <IdDto category="5" componentType="0" componentNumber="1" pinNumber="0"/>
                                 </from>
@@ -2292,31 +1784,25 @@
                                     <IdDto category="100" componentType="45" componentNumber="0" pinNumber="11"/>
                                 </to>
                                 <path>
-                                    <point value="(-691;59)"/>
-                                    <point value="(-607;59)"/>
-                                    <point value="(-607;61)"/>
+                                    <point value="(-766;230)"/>
+                                    <point value="(-766;61)"/>
                                     <point value="(-594;61)"/>
                                 </path>
                             </connection>
-                            <connection connectionType="1" routingType="0" sceneIndex="0">
+                            <connection connectionType="0" routingType="0" sceneIndex="0">
                                 <from>
                                     <IdDto category="5" componentType="0" componentNumber="1" pinNumber="0"/>
                                 </from>
                                 <to>
                                     <IdDto category="5" componentType="43" componentNumber="1" pinNumber="1"/>
                                 </to>
-                                <path/>
+                                <path>
+                                    <point value="(-766;230)"/>
+                                    <point value="(-766;160)"/>
+                                    <point value="(-750;160)"/>
+                                </path>
                             </connection>
-                            <connection connectionType="1" routingType="0" sceneIndex="0">
-                                <from>
-                                    <IdDto category="5" componentType="0" componentNumber="1" pinNumber="0"/>
-                                </from>
-                                <to>
-                                    <IdDto category="5" componentType="43" componentNumber="2" pinNumber="1"/>
-                                </to>
-                                <path/>
-                            </connection>
-                            <connection connectionType="1" routingType="0" sceneIndex="0">
+                            <connection connectionType="0" routingType="0" sceneIndex="0">
                                 <from>
                                     <IdDto category="5" componentType="0" componentNumber="1" pinNumber="0"/>
                                 </from>
@@ -2324,11 +1810,8 @@
                                     <IdDto category="5" componentType="43" componentNumber="3" pinNumber="1"/>
                                 </to>
                                 <path>
-                                    <point value="(-691;59)"/>
-                                    <point value="(-667;59)"/>
-                                    <point value="(-667;28)"/>
-                                    <point value="(-763;28)"/>
-                                    <point value="(-763;-32)"/>
+                                    <point value="(-766;230)"/>
+                                    <point value="(-766;-32)"/>
                                     <point value="(-750;-32)"/>
                                 </path>
                             </connection>
@@ -2336,7 +1819,7 @@
                     </network>
                     <network networkId="36" name="NET36">
                         <connections>
-                            <connection connectionType="1" routingType="0" sceneIndex="0">
+                            <connection connectionType="0" routingType="0" sceneIndex="0">
                                 <from>
                                     <IdDto category="5" componentType="43" componentNumber="1" pinNumber="0"/>
                                 </from>
@@ -2352,20 +1835,23 @@
                     </network>
                     <network networkId="35" name="NET35">
                         <connections>
-                            <connection connectionType="1" routingType="0" sceneIndex="0">
+                            <connection connectionType="0" routingType="0" sceneIndex="0">
                                 <from>
                                     <IdDto category="5" componentType="43" componentNumber="2" pinNumber="0"/>
                                 </from>
                                 <to>
                                     <IdDto category="100" componentType="45" componentNumber="0" pinNumber="14"/>
                                 </to>
-                                <path/>
+                                <path>
+                                    <point value="(695;-168)"/>
+                                    <point value="(616;-168)"/>
+                                </path>
                             </connection>
                         </connections>
                     </network>
                     <network networkId="34" name="NET34">
                         <connections>
-                            <connection connectionType="1" routingType="0" sceneIndex="0">
+                            <connection connectionType="0" routingType="0" sceneIndex="0">
                                 <from>
                                     <IdDto category="5" componentType="43" componentNumber="3" pinNumber="0"/>
                                 </from>
@@ -2395,7 +1881,7 @@
             <textLineDataField name="Customer&#10;Name:" id="2" text="AoiSaya"/>
             <textLineDataField name="Customer&#10;Project Name:" id="3" text=""/>
             <textLineDataField name="Customer&#10;Project Number:" id="4" text="I2CPWM"/>
-            <textLineDataField name="Customer&#10;Version Number:" id="5" text="002"/>
+            <textLineDataField name="Customer&#10;Version Number:" id="5" text="003"/>
             <multiTextLineDataField>
                 <textLineDataField name="Notes:" id="6" text=""/>
             </multiTextLineDataField>
