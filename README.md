@@ -1,8 +1,7 @@
-# I2C control PWM generater for servo using GreenPAK. (緑豆壱拾仇號)
+# I2C control PWM generater for servo. (緑豆壱拾仇號)  
   
 GreenPAK用のデザインデータです。  
-I2Cで模型用サーボを最大8個制御することができます。
-（設定したパルス幅のサーボ用PWMを最大8ch生成）
+I2Cで模型用サーボを最大8個制御することができます。（サーボ用PWMを最大8ch生成）  
 同時にGPOを追加することもできます。  
 SLG46826V(STQFN) または SLG46826G(TSSOP) に対応しています。   
 
@@ -10,7 +9,7 @@ SLG46826V(STQFN) または SLG46826G(TSSOP) に対応しています。
 - I2Cアドレスで最大8つのPWMを発生可能
 - PWM 8chに加え、2つのGPO（汎用出力端子）が利用可能
 - PWMに使わない端子をGPI（汎用入力端子）として利用可能
-- 端子設定を変えることで本デバイスをI2Cバスに最大8個ぶら下げることができるので、最大64個の模型用サーボを制御可能
+- 本デバイスをI2Cバスに8個ぶら下げて、最大64個の模型用サーボが制御可能（理論値）
   
 ### 本デザインの使用イメージ
 <img src="img/I2C2PWM_sample.jpg" width="800">  
@@ -31,7 +30,7 @@ STQFN Pin # | TSSOP Pin # | 機能名 | IO | 内蔵抵抗 | SLG46826端子名 | 
 11 | 10 | GND |  |  | GND |  GND
 12 | 9 | PWM0 | O | - | IO7 | PWM output 0
 13 | 8 | PWM1/GPI1 | I/O | PD100k | IO8 | PWM output 1 or general-purpose input 1
-14 | 7 | VDD2 |  |  | VDD2 |  2.3V～5.5V, VVD2≦VDD
+14 | 7 | VDD2 |  |  | VDD2 |  2.3V～5.5V, VDD2≦VDD
 15 | 6 | PWM2/GPI2 | I/O | PD100k | IO9  | PWM output 2 or general-purpose input 2
 16 | 5 | PWM3/GPI3 | I/O | PD100k | IO10 | PWM output 3 or general-purpose input 3
 17 | 4 | PWM4/GPI4 | I/O | PD100k | IO11 | PWM output 4 or general-purpose input 4
@@ -40,23 +39,23 @@ STQFN Pin # | TSSOP Pin # | 機能名 | IO | 内蔵抵抗 | SLG46826端子名 | 
 20 | 1 | PWM7/GPI7 | I/O | PD100k | IO14 | PWM output 7 or general-purpose input 7
 
 ### 内蔵抵抗
-各端子の内蔵抵抗を有効にしてありますので、外付けプルアップ／プルダウン抵抗を省略できます。 
-(不要な場合や値を変更したい場合などは設計ツールでI/Oのプロパティを書き換えてください) 
+各端子の内蔵抵抗を有効にしてありますので、外付けプルアップ／プルダウン抵抗を省略できます。   
+(不要な場合や値を変更したい場合などは設計ツールでI/Oのプロパティを書き換えてください)   
 記号はおおよその抵抗値を表しており、値は以下の通りです。  
 - PD10k Pull-down 10k ohm  
 - PD100k Pull-down 100k ohm  
 - PU10k Pull-up 10k ohm  
 - PU100k Pull-up 100k ohm  
   
-### I2Cスレーブアドレスの選択
-I2Cスレーブアドレスの選択は、端子SLA2,SLA1,SLA0で行います。  
-端子SLA1,SLA0をHighまたはLowとすることで使用するI2Cアドレスを選択することができます。  
-SLA1,SLA0とI2Cアドレスの対応は下表の通りです。  
+### I2Cアドレスの選択
+I2Cアドレスの選択は、端子SLA2,SLA1,SLA0で行います。  
+端子SLA2～0をHighまたはLowとすることで使用するI2Cアドレスを選択することができます。  
+端子SLA2～0とI2Cアドレスの対応は下表の通りです。  
 I2Cアドレスの下位3ビットを0または1にすることで、設定用(configuration)レジスタにアクセスすることができます。  
 0または1以外は回路書換用に予約されていますので、不用意にアクセスを行わないでください。  
-※上位1ビットは固定です。変更するには設計ツールでI2Cのプロパティを書き換えてください。  
+※I2Cアドレスの最上位1ビットは固定です。変更するには設計ツールでI2Cのプロパティを書き換えてください。  
   
-SLA2 | SLA1 | SLA0 | binary | slave address | comment
+SLA2 | SLA1 | SLA0 | binary | I2C address | comment
 --- | --- | --- | --- | --- | ---
 open | open | open | 0001xxx | 0x08<BR>0x09~0x0F | for configuration<BR>reserved 
 Low  | Low  | Low  | 0000xxx | 0x01<BR>0x02~0x07 | for configuration<BR>reserved 
@@ -105,7 +104,8 @@ High | High | High | 0111xxx | 0x38<BR>0x38~0x3F | for configuration<BR>reserved
     
 ### PWMとGPIの切り替え
 PWM1～PWM7は汎用入力として使用することができます。設定はアドレス0x7Aで行います。  
-1を設定するとPWM出力、0を設定するとPWM停止ですが、PWMを使わない時は端子の状態をアドレス0x74またはアドレス0x75からリードすることができます。  
+1を設定するとPWM出力、0を設定するとPWM停止です。（デフォルトは0）  
+PWMを使わない時は0のままとすることで、端子の状態をアドレス0x74またはアドレス0x75からリードすることができます。  
 
 ### PWMのパルス幅
 High期間（H[ms])は以下の式で計算した値をアドレス0x7C～0ｘC6のPWM0～PWM7に対応するレジスタに設定します。  
@@ -136,7 +136,7 @@ LEDの輝度調整など、デューティの最大値が100％になるよう�
 「GreenPAK6 Designer」で  
 I2C2PWM.gp6  
 を開き、SLG46826Vに焼いてください。  
-プルアップ／プルダウン抵抗、ドライブ能力などはお好きに変更して下さい。
+プルアップ／プルダウン抵抗、ドライブ能力などは設計ツールでお好きに変更して下さい。  
 SLG46826G に焼く場合は、File-Project info で Packageを「TSSOP-20」に変更してください。  
   
 ## 免責事項
