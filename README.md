@@ -90,14 +90,14 @@ High | High | High | 01110xx | 0x38<BR>0x38~0x3B | for configuration<BR>reserved
 | | | | [2] | PWM2 control, 1:ON, 0:OFF(PIO2 input & Pull down)
 | | | | [1] | PWM1 control, 1:ON, 0:OFF(PIO1 input & Pull down)
 | | | | [0] | PWM0 control, 1:ON, 0:OFF(INT outut)
-| 0x7C | W | 0x5B | [7:0] | on time of PWM0
-| 0xAA | W | 0x5B | [7:0] | on time of PWM1
-| 0xAF | W | 0x5B | [7:0] | on time of PWM2
-| 0xB3 | W | 0x5B | [7:0] | on time of PWM3
-| 0xB8 | W | 0x5B | [7:0] | on time of PWM4
-| 0cBC | W | 0x5B | [7:0] | on time of PWM5
-| 0xC1 | W | 0x5B | [7:0] | on time of PWM6
-| 0xC6 | W | 0x5B | [7:0] | on time of PWM7
+| 0x7C | W | 0x7C | [7:0] | on time of PWM0
+| 0xAA | W | 0x7C | [7:0] | on time of PWM1
+| 0xAF | W | 0x7C | [7:0] | on time of PWM2
+| 0xB3 | W | 0x7C | [7:0] | on time of PWM3
+| 0xB8 | W | 0x7C | [7:0] | on time of PWM4
+| 0cBC | W | 0x7C | [7:0] | on time of PWM5
+| 0xC1 | W | 0x7C | [7:0] | on time of PWM6
+| 0xC6 | W | 0x7C | [7:0] | on time of PWM7
 | 0xC7 | W | 0x0C | [7:4] | *Reserved (0)*
 | | | | [3:2] | GPO1 control 2:output Low, 3: output High
 | | | | [1:0] | GPO0 control 2:output Low, 3: output High
@@ -108,31 +108,28 @@ PWM1～PWM7は汎用入力として使用することができます。設定は
 PWMを使わない時は0のままとすることで、端子の状態をアドレス0x74またはアドレス0x75からリードすることができます。  
 
 ### PWMのパルス幅
+パルス幅は、一般的な模型用サーボの合わせて 0.49ms～2.48msの間を8bit分解能で設定することができます。
 High期間（H[ms])は以下の式で計算した値をアドレス0x7C～0ｘC6のPWM0～PWM7に対応するレジスタに設定します。  
-設定値＝64*H-2  
+設定値＝(H-0.469)*128-2  
 
 #### 参考設定値
 |Servo|angle|time|value
 | --- | --- | --- | ---
-|SG90 | -90 | 0.50 | 0x1E
-| | 0 | 1.45 | 0x5B
-| | 90 | 2.40 | 0x98
-|FT90B | -90 | 0.70 | 0x2B
-| | 0 | 1.50 | 0x5E
-| | 90 | 2.30 | 0x91
-|MG92B | -80 | 0.50 | 0x1E
-| | 0 | 1.45 | 0x5B
-| | 80 | 2.40 | 0x98
-|FS90 | -max | 0.50 | 0x1E
-|(rotation Servo) | stop | 1.50 | 0x5E
-| | max | 2.50 | 0x9E
+|SG90 | -90 | 0.50 | 0x02
+| | 0 | 1.45 | 0x7C
+| | 90 | 2.40 | 0xF5
+|FT90B | -90 | 0.70 | 0x1C
+| | 0 | 1.50 | 0x82
+| | 90 | 2.30 | 0xE8
+|MG92B | -80 | 0.50 | 0x02
+| | 0 | 1.45 | 0x7C
+| | 80 | 2.40 | 0xF5
+|FS90 | -max | 0.50 | 0x02
+|(rotation Servo) | stop | 1.50 | 0x82
+| | max | 2.48 | 0xFF
 
 ### PWMの周期
-PWMの周期は多くの模型用サーボに合わせて20ms固定です。  
-2.048MHzを分周して20ms周期の極細パルスを生成し、カウンタをdelayモードに設定して立下りタイミングを引き延ばすことで生成しています。  
-この時、パルス幅を模型用サーボ(SG90など)の仕様に合わせて最大4msとすることで分解能を稼いでいます。
-LEDの輝度調整など、デューティの最大値が100％になるようなPWMを出力したい場合は、設計ツールで20ms周期パルスを発生しているDFF8の代わりに4ms周期パルスを発生しているDFF6の出力につなぎなおしてください。（I2Cでも切り替え可能ですが煩雑なので説明は省略します）  
-つなぎなおすとアドレス0x7C～0ｘC6の設定値0～255でデューティ0～100％を表現できるようになります。
+PWMの周期は、20.625ms固定です。  
 
 ## 設計データ
 「GreenPAK6 Designer」で  
