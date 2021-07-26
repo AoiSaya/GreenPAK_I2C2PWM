@@ -51,21 +51,21 @@ STQFN Pin # | TSSOP Pin # | 機能名 | IO | 内蔵抵抗 | SLG46826端子名 | 
 I2Cアドレスの選択は、端子SLA2,SLA1,SLA0で行います。  
 端子SLA2～0をHighまたはLowとすることで使用するI2Cアドレスを選択することができます。  
 端子SLA2～0とI2Cアドレスの対応は下表の通りです。  
-I2Cアドレスの下位3ビットを0または1にすることで、設定用(configuration)レジスタにアクセスすることができます。  
-0または1以外は回路書換用に予約されていますので、不用意にアクセスを行わないでください。  
+I2Cアドレスの下位2ビットを0または1にすることで、設定用(configuration)レジスタにアクセスすることができます。  
+下位2ビットを2または3としたアドレスは回路書換用に予約されていますので、不用意にアクセスを行わないでください。  
 ※I2Cアドレスの最上位1ビットは固定です。変更するには設計ツールでI2Cのプロパティを書き換えてください。  
   
 SLA2 | SLA1 | SLA0 | binary | I2C address | comment
 --- | --- | --- | --- | --- | ---
-open | open | open | 0001xxx | 0x08<BR>0x09~0x0F | for configuration<BR>reserved 
-Low  | Low  | Low  | 0000xxx | 0x01<BR>0x02~0x07 | for configuration<BR>reserved 
-Low  | Low  | High | 0001xxx | 0x08<BR>0x09~0x0F | for configuration<BR>reserved 
-Low  | High | Low  | 0010xxx | 0x10<BR>0x11~0x17 | for configuration<BR>reserved 
-Low  | High | High | 0011xxx | 0x18<BR>0x18~0x1F | for configuration<BR>reserved 
-High | Low  | Low  | 0100xxx | 0x20<BR>0x21~0x27 | for configuration<BR>reserved 
-High | Low  | High | 0101xxx | 0x28<BR>0x29~0x2F | for configuration<BR>reserved 
-High | High | Low  | 0110xxx | 0x30<BR>0x31~0x37 | for configuration<BR>reserved 
-High | High | High | 0111xxx | 0x38<BR>0x38~0x3F | for configuration<BR>reserved 
+open | open | open | 00010xx | 0x08<BR>0x09~0x0B | for configuration<BR>reserved 
+Low  | Low  | Low  | 00000xx | 0x01<BR>0x02~0x03 | for configuration<BR>reserved 
+Low  | Low  | High | 00010xx | 0x08<BR>0x09~0x0B | for configuration<BR>reserved 
+Low  | High | Low  | 00100xx | 0x10<BR>0x11~0x13 | for configuration<BR>reserved 
+Low  | High | High | 00110xx | 0x18<BR>0x18~0x1B | for configuration<BR>reserved 
+High | Low  | Low  | 01000xx | 0x20<BR>0x21~0x23 | for configuration<BR>reserved 
+High | Low  | High | 01010xx | 0x28<BR>0x29~0x2B | for configuration<BR>reserved 
+High | High | Low  | 01100xx | 0x30<BR>0x31~0x33 | for configuration<BR>reserved 
+High | High | High | 01110xx | 0x38<BR>0x38~0x3B | for configuration<BR>reserved 
 
 ## 設定レジスタ
 レジスタ一覧を下記に示します。  
@@ -98,7 +98,7 @@ High | High | High | 0111xxx | 0x38<BR>0x38~0x3F | for configuration<BR>reserved
 | 0cBC | W | 0x5B | [7:0] | on time of PWM5
 | 0xC1 | W | 0x5B | [7:0] | on time of PWM6
 | 0xC6 | W | 0x5B | [7:0] | on time of PWM7
-| 0xC7 | W | 0x0C | [7:4] | Reserved (0)
+| 0xC7 | W | 0x0C | [7:4] | *Reserved (0)*
 | | | | [3:2] | GPO1 control 2:output Low, 3: output High
 | | | | [1:0] | GPO0 control 2:output Low, 3: output High
     
@@ -128,9 +128,11 @@ High期間（H[ms])は以下の式で計算した値をアドレス0x7C～0ｘC6
 | | max | 2.50 | 0x9E
 
 ### PWMの周期
-PWMの周期は多くの模型用サーボに合わせて4ms固定です。  
-LEDの輝度調整など、デューティの最大値が100％になるようなPWMを出力したい場合は、設計ツールで20ms周期パルスを発生しているDFF8の代わりに4ms周期パルスを発生しているDFF6につなぎなおしてください。（I2Cでも切り替え可能ですが煩雑なので説明は省略します）  
-つなぎなおすとアドレス0x7C～0ｘC6の設定値0～255がデューティ0～100％に対応するようになります。
+PWMの周期は多くの模型用サーボに合わせて20ms固定です。  
+2.048MHzを分周して20ms周期の極細パルスを生成し、カウンタをdelayモードに設定して立下りタイミングを引き延ばすことで生成しています。  
+この時、パルス幅を模型用サーボ(SG90など)の仕様に合わせて最大4msとすることで分解能を稼いでいます。
+LEDの輝度調整など、デューティの最大値が100％になるようなPWMを出力したい場合は、設計ツールで20ms周期パルスを発生しているDFF8の代わりに4ms周期パルスを発生しているDFF6の出力につなぎなおしてください。（I2Cでも切り替え可能ですが煩雑なので説明は省略します）  
+つなぎなおすとアドレス0x7C～0ｘC6の設定値0～255でデューティ0～100％を表現できるようになります。
 
 ## 設計データ
 「GreenPAK6 Designer」で  
