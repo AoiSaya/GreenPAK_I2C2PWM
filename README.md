@@ -20,9 +20,9 @@ STQFN Pin # | TSSOP Pin # | 機能名 | IO | 内蔵抵抗 | SLG46826端子名 | 
 1 | 20 | VDD  |   |   | VDD |  2.3V～5.5V
 2 | 19 | GPO0 | O | - | IO0 | General-purpose output 0
 3 | 18 | CE   | I | PU10k | IO1 | Chip enable (active High)
-4 | 17 | SLA0 | I | PU10k | IO2 | I2C slave address 0
-5 | 16 | SLA1 | I | PD10k | IO3 | I2C slave address 1
-6 | 15 | SLA2 | I | PD10k | IO4 | I2C slave address 2
+4 | 17 | SLA0 | I | PU10k | IO2 | I2C target address 0
+5 | 16 | SLA1 | I | PD10k | IO3 | I2C target address 1
+6 | 15 | SLA2 | I | PD10k | IO4 | I2C target address 2
 7 | 14 | GPO1 | O | - | IO5 | General-purpose output 1
 8 | 13 | SCL | I | - | SCL | SCL for SLG46826
 9 | 12 | SDA | I/O | - | SDA | SDA for SLG46826
